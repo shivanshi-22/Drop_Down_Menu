@@ -1,0 +1,104 @@
+/* General Dropdown Styling with Dark Purple and Black Gradient */
+.mega-dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+  
+    /* Dark purple and blackish shiny gradient */
+    background: linear-gradient(145deg, #4b0082, #2e003e, #1a1a1a);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow for shiny effect */
+  }
+  
+  .dropdown-grid {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dropdown-header {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* Dropdown item styling */
+  .dropdown-item {
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight highlight */
+    border-radius: 5px;
+  }
+  
+  /* Icon styling in the dropdown */
+  .dropdown-item i {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .interactive-item {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Active state transition for click feedback */
+  .active-item {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff !important;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .active-item:hover {
+    transform: scale(1.08);
+  }
+  
+  /* Keep the text white on hover */
+  .dropdown-item:hover, .dropdown-item:hover i {
+    color: #fff !important; /* Maintain white text and icon */
+  }
+  
+  /* Transition effect on hover */
+  .interactive-item:hover {
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 991.98px) {
+    .mega-dropdown:hover .dropdown-menu {
+      display: none;
+    }
+  
+    .mega-dropdown .dropdown-menu {
+      display: block;
+      position: static;
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  
+    .dropdown-grid {
+      flex-direction: column;
+    }
+  }
+  

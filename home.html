@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Games Interactive Dropdown</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+    <!-- Add Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Epic Games</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown mega-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+              <div class="container dropdown-grid">
+                <div class="row">
+                  <!-- Play Section -->
+                  <div class="col-md-4 dropdown-section">
+                    <h6 class="dropdown-header">Play</h6>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-gamepad"></i> Fortnite</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-rocket"></i> Rocket League</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-smile"></i> Fall Guys</a>
+                  </div>
+                  <!-- Discover Section -->
+                  <div class="col-md-4 dropdown-section">
+                    <h6 class="dropdown-header">Discover</h6>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-store"></i> Epic Games Store</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-cube"></i> Fab</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-shapes"></i> Sketchfab</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-palette"></i> ArtStation</a>
+                  </div>
+                  <!-- Create Section -->
+                  <div class="col-md-4 dropdown-section">
+                    <h6 class="dropdown-header">Create</h6>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-tools"></i> Unreal Engine</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-user"></i> MetaHuman</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-building"></i> Twinmotion</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-cube"></i> RealityScan</a>
+                    <a class="dropdown-item interactive-item" href="#"><i class="fas fa-camera"></i> RealityCapture</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
